@@ -77,13 +77,61 @@ public class AddCliente extends AppCompatActivity implements View.OnClickListene
 
     @Override
     public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-        if (spDepartamento.getSelectedItem().equals("Ahuachapan")) {
+        if (spDepartamento.getSelectedItem().equals("AHUACHAPAN")) {
             ArrayAdapter adapter2 = ArrayAdapter.createFromResource(this,
                     R.array.ahuachapan_array, android.R.layout.simple_spinner_dropdown_item);
             spMunicipio.setAdapter(adapter2);
-        } else if(spDepartamento.getSelectedItem().equals("Santa Ana")){
+        } else if(spDepartamento.getSelectedItem().equals("SANTA ANA")){
             ArrayAdapter adapter2 = ArrayAdapter.createFromResource(this,
                     R.array.santa_ana_array, android.R.layout.simple_spinner_dropdown_item);
+            spMunicipio.setAdapter(adapter2);
+        } else if (spDepartamento.getSelectedItem().equals("SONSONATE")) {
+            ArrayAdapter adapter2 = ArrayAdapter.createFromResource(this,
+                    R.array.sonsonate_array, android.R.layout.simple_spinner_dropdown_item);
+            spMunicipio.setAdapter(adapter2);
+        } else if(spDepartamento.getSelectedItem().equals("CHALATENANGO")){
+            ArrayAdapter adapter2 = ArrayAdapter.createFromResource(this,
+                    R.array.chalatenango_array, android.R.layout.simple_spinner_dropdown_item);
+            spMunicipio.setAdapter(adapter2);
+        } else if (spDepartamento.getSelectedItem().equals("LA LIBERTAD")) {
+            ArrayAdapter adapter2 = ArrayAdapter.createFromResource(this,
+                    R.array.la_libertad_array, android.R.layout.simple_spinner_dropdown_item);
+            spMunicipio.setAdapter(adapter2);
+        } else if(spDepartamento.getSelectedItem().equals("SAN SALVADOR")){
+            ArrayAdapter adapter2 = ArrayAdapter.createFromResource(this,
+                    R.array.san_salvador_array, android.R.layout.simple_spinner_dropdown_item);
+            spMunicipio.setAdapter(adapter2);
+        } else if (spDepartamento.getSelectedItem().equals("CUSCATLAN")) {
+            ArrayAdapter adapter2 = ArrayAdapter.createFromResource(this,
+                    R.array.cuscatlan_array, android.R.layout.simple_spinner_dropdown_item);
+            spMunicipio.setAdapter(adapter2);
+        } else if(spDepartamento.getSelectedItem().equals("LA PAZ")){
+            ArrayAdapter adapter2 = ArrayAdapter.createFromResource(this,
+                    R.array.la_paz_array, android.R.layout.simple_spinner_dropdown_item);
+            spMunicipio.setAdapter(adapter2);
+        } else if(spDepartamento.getSelectedItem().equals("CABAÑAS")){
+            ArrayAdapter adapter2 = ArrayAdapter.createFromResource(this,
+                    R.array.cabanhas_array, android.R.layout.simple_spinner_dropdown_item);
+            spMunicipio.setAdapter(adapter2);
+        } else if (spDepartamento.getSelectedItem().equals("SAN VICENTE")) {
+            ArrayAdapter adapter2 = ArrayAdapter.createFromResource(this,
+                    R.array.san_vicente_array, android.R.layout.simple_spinner_dropdown_item);
+            spMunicipio.setAdapter(adapter2);
+        } else if(spDepartamento.getSelectedItem().equals("USULUTAN")){
+            ArrayAdapter adapter2 = ArrayAdapter.createFromResource(this,
+                    R.array.usulutan_array, android.R.layout.simple_spinner_dropdown_item);
+            spMunicipio.setAdapter(adapter2);
+        } else if (spDepartamento.getSelectedItem().equals("SAN MIGUEL")) {
+            ArrayAdapter adapter2 = ArrayAdapter.createFromResource(this,
+                    R.array.san_miguel_array, android.R.layout.simple_spinner_dropdown_item);
+            spMunicipio.setAdapter(adapter2);
+        } else if(spDepartamento.getSelectedItem().equals("MORAZAN")){
+            ArrayAdapter adapter2 = ArrayAdapter.createFromResource(this,
+                    R.array.morazan_array, android.R.layout.simple_spinner_dropdown_item);
+            spMunicipio.setAdapter(adapter2);
+        } else if(spDepartamento.getSelectedItem().equals("LA UNION")){
+            ArrayAdapter adapter2 = ArrayAdapter.createFromResource(this,
+                    R.array.la_union_array, android.R.layout.simple_spinner_dropdown_item);
             spMunicipio.setAdapter(adapter2);
         }
 

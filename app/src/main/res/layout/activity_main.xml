@@ -9,12 +9,14 @@
 
     <Button
         android:id="@+id/btnAddCliente"
+        android:theme="@style/ButtonColor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/addCliente" />
 
     <Button
         android:id="@+id/btnCreateFactura"
+        android:theme="@style/ButtonColor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/btnAddFactura" />

@@ -1,51 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="spinnerDepartamento">
-        <item>Ahuachapan</item>
-        <item>Santa Ana</item>
-        <item>Sonsonate</item>
-        <item>Chalatenango</item>
-        <item>La Libertad</item>
-        <item>San Salvador</item>
-        <item>Cuscatlan</item>
-        <item>La Paz</item>
-        <item>Cabañas</item>
-        <item>San Vicente</item>
-        <item>Usulutan</item>
-        <item>San Miguel</item>
-        <item>Morazan</item>
-        <item>La Unión</item>
+        <item>AHUACHAPAN</item>
+        <item>SANTA ANA</item>
+        <item>SONSONATE</item>
+        <item>CHALATENANGO</item>
+        <item>LA LIBERTAD</item>
+        <item>SAN SALVADOR</item>
+        <item>CUSCATLAN</item>
+        <item>LA PAZ</item>
+        <item>CABAÑAS</item>
+        <item>SAN VICENTE</item>
+        <item>USULUTAN</item>
+        <item>SAN MIGUEL</item>
+        <item>MORAZAN</item>
+        <item>LA UNION</item>
     </string-array>
 
     <string-array name="ahuachapan_array">
-        <item>Ahuachapan</item>
-        <item>Apaneca</item>
-        <item>Atiquizaya</item>
-        <item>Concepcion de Ataco</item>
-        <item>El Refugio</item>
-        <item>Guaymango</item>
-        <item>Jujutla</item>
-        <item>San Francisco Menendez</item>
-        <item>San Lorenzo</item>
-        <item>San Pedro Puxtla</item>
-        <item>Tacuba</item>
-        <item>Turin</item>
+        <item>AHUACHAPAN</item>
+        <item>APANECA</item>
+        <item>ATIQUIZAYA</item>
+        <item>ATACO</item>
+        <item>EL REFUGIO</item>
+        <item>GUAYMANGO</item>
+        <item>JUJUTLA</item>
+        <item>SAN FRANCISCO MENENDEZ</item>
+        <item>SAN LORENZO</item>
+        <item>SAN PEDRO PUXTLA</item>
+        <item>TACUBA</item>
+        <item>TURIN</item>
     </string-array>
 
     <string-array name="santa_ana_array">
-        <item>Candelaria de la Frontera</item>
-        <item>Chalchuapa</item>
-        <item>Coatepeque</item>
-        <item>El Congo</item>
-        <item>El Porvenir</item>
-        <item>Masahuat</item>
-        <item>Metapan</item>
-        <item>San Antonio Pajonal</item>
-        <item>San Sebastian Salitrillo</item>
-        <item>Santa Ana</item>
-        <item>Santa Rosa Guachipilin</item>
-        <item>Santiago de la Frontera</item>
-        <item>Texistepeque</item>
+        <item>CANDELARIA DE LA FRONTERA</item>
+        <item>COATEPEQUE</item>
+        <item>CHALCHUAPA</item>
+        <item>EL CONGO</item>
+        <item>EL PORVENIR</item>
+        <item>MASAHUAT</item>
+        <item>METAPAN</item>
+        <item>SAN ANTONIO PAJONAL</item>
+        <item>SAN SEBASTIAN SALITRILLO</item>
+        <item>SANTA ANA</item>
+        <item>SANTA ROSA GUACHIPILIN</item>
+        <item>SANTIAGO DE LA FRONTERA</item>
+        <item>TEXISTEPEQUE</item>
     </string-array>
     <string-array name="sonsonate_array">
         <item>ACAJUTLA</item>
@@ -187,7 +187,7 @@
         <item>ZACATECOLUCA</item>
         <item>SAN LUIS LA HERRADURA</item>
     </string-array>
-    <string-array name="cabañas_array">
+    <string-array name="cabanhas_array">
         <item>CINQUERA</item>
         <item>GUACOTECTI</item>
         <item>ILOBASCO</item>

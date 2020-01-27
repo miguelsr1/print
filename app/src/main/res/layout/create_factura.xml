@@ -18,19 +18,30 @@
             android:text="@string/FindNit"
             android:textSize="18sp" />
 
-        <EditText
-            android:id="@+id/txtFindNit"
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:digits="0123456789-"
-            android:ems="10"
-            android:inputType="number" />
+            android:orientation="horizontal">
 
-        <Button
-            android:id="@+id/btnBuscar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="@string/btnBuscar" />
+            <EditText
+                android:id="@+id/txtFindNit"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:digits="0123456789-"
+                android:ems="10"
+                android:inputType="number" />
+
+            <Button
+                android:id="@+id/btnBuscar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:maxWidth="500dp"
+                android:minWidth="100dp"
+                android:drawableLeft="@android:drawable/ic_menu_search"
+                android:theme="@style/ButtonColor" />
+        </LinearLayout>
 
         <TextView
             android:id="@+id/lblNombreCliente"
@@ -88,53 +99,51 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="35dp"
             android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/lblIva"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:gravity="center"
                 android:text="@string/lblIva"
                 android:textAlignment="textEnd"
                 android:textSize="18sp" />
 
-            <EditText
+            <TextView
                 android:id="@+id/txtIva"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:clickable="false"
                 android:ems="10"
-                android:gravity="right"
-                android:inputType="numberDecimal"
+                android:gravity="center|right"
                 android:textStyle="bold|italic" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="35dp"
             android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/lblMontoTotal"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
+                android:gravity="center"
                 android:text="@string/lblMontoTotal"
                 android:textAlignment="textEnd"
                 android:textSize="18sp" />
 
-            <EditText
+            <TextView
                 android:id="@+id/txtMontoTotal"
                 android:layout_width="0dp"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:clickable="false"
                 android:ems="10"
-                android:gravity="right"
-                android:inputType="numberDecimal"
+                android:gravity="center|right"
                 android:textStyle="bold|italic" />
 
         </LinearLayout>
@@ -150,6 +159,7 @@
 
         <Button
             android:id="@+id/btnCrearPdf"
+            android:theme="@style/ButtonColor"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Generar Factura" />

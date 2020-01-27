@@ -12,6 +12,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
@@ -60,7 +61,8 @@ public class CreateFactura extends AppCompatActivity implements View.OnClickList
     String strMonto, strMontoIva, strMontoTotal;
     String nit="";
 
-    EditText txtNit, txtMonto, txtIva, txtMontoTotal, txtConcepto, txaNombreCliente;
+    EditText txtNit, txtMonto, txtConcepto, txaNombreCliente;
+    TextView txtIva, txtMontoTotal;
     Button btnBuscar;
     Button btnGenerarFactura;
 
@@ -86,7 +88,22 @@ public class CreateFactura extends AppCompatActivity implements View.OnClickList
                         btnGenerarFactura.setOnClickListener(new View.OnClickListener(){
                             @Override
                             public void onClick(View v){
-                                crearFacturaPDF(Common.getAppPath(CreateFactura.this)+"test_factura.pdf");
+                                boolean error = false;
+                                if(lst.isEmpty()) {
+                                    error = true;
+                                    Toast.makeText(CreateFactura.this,"Debe de ingresar un N.I.T. registrado ",Toast.LENGTH_LONG).show();
+                                }
+                                if(txtConcepto.getText().toString().isEmpty()){
+                                    error = true;
+                                    txtConcepto.setError("El concepto es requerido!");
+                                }
+                                if(txtMonto.getText().toString().isEmpty()){
+                                    error = true;
+                                    txtMonto.setError("El monto es requerido!");
+                                }
+                                if(!error) {
+                                    crearFacturaPDF(Common.getAppPath(CreateFactura.this) + "test_factura.pdf");
+                                }
                             }
                         });
                     }

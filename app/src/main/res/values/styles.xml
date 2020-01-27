@@ -9,7 +9,18 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
         <item name="android:windowFullscreen">true</item>
+        <item name="android:textColor">#00448c</item>
+
+        <item name="colorControlNormal">#00448c</item>
+        <item name="colorControlActivated">#002b59</item>
+        <item name="colorControlHighlight">#002b59</item>
+
+        <item name="android:textColorPrimary">#00448c</item>
+        <item name="colorButtonNormal">#00448c</item>
     </style>
 
+    <style name="ButtonColor" parent="@android:style/Widget.Button">
+        <item name="android:textColor">#ffffff</item>
+    </style>
 
 </resources>
