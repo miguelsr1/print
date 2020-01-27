@@ -47,4 +47,265 @@
         <item>Santiago de la Frontera</item>
         <item>Texistepeque</item>
     </string-array>
+    <string-array name="sonsonate_array">
+        <item>ACAJUTLA</item>
+        <item>ARMENIA</item>
+        <item>CALUCO</item>
+        <item>CUISNAHUAT</item>
+        <item>ISHUATAN</item>
+        <item>IZALCO</item>
+        <item>JUAYUA</item>
+        <item>NAHUIZALCO</item>
+        <item>NAHULINGO</item>
+        <item>SALCOATITAN</item>
+        <item>SAN ANTONIO DEL MONTE</item>
+        <item>SAN JULIAN</item>
+        <item>SANTA CATARINA MASAHUAT</item>
+        <item>SANTO DOMINGO DE GUZMAN</item>
+        <item>SONSONATE</item>
+        <item>SONZACATE</item>
+    </string-array>
+    <string-array name="chalatenango_array">
+        <item>AGUA CALIENTE</item>
+        <item>ARCATAO</item>
+        <item>AZACUALPA</item>
+        <item>CITALA</item>
+        <item>COMALAPA</item>
+        <item>CONCEPCION QUEZALTEPEQUE</item>
+        <item>CHALATENANGO</item>
+        <item>DULCE NOMBRE DE MARIA</item>
+        <item>EL CARRIZAL</item>
+        <item>EL PARAISO</item>
+        <item>LA LAGUNA</item>
+        <item>LA PALMA</item>
+        <item>LA REINA</item>
+        <item>LAS VUELTAS</item>
+        <item>NOMBRE DE JESUS</item>
+        <item>NUEVA CONCEPCION</item>
+        <item>NUEVA TRINIDAD</item>
+        <item>OJOS DE AGUA</item>
+        <item>POTONICO</item>
+        <item>SAN ANTONIO DE LA CRUZ</item>
+        <item>SAN ANTONIO DE LOS RANCHOS</item>
+        <item>SAN FERNANDO</item>
+        <item>SAN FRANCISCO LEMPA</item>
+        <item>SAN FRANCISCO MORAZAN</item>
+        <item>SAN IGNACIO</item>
+        <item>SAN ISIDRO LABRADOR</item>
+        <item>SAN JOSE CANCASQUE</item>
+        <item>SAN JOSE LAS FLORES</item>
+        <item>SAN LUIS DEL CARMEN</item>
+        <item>SAN MIGUEL DE MERCEDES</item>
+        <item>SAN RAFAEL</item>
+        <item>SANTA RITA</item>
+        <item>TEJUTLA</item>
+    </string-array>
+    <string-array name="la_libertad_array">
+        <item>ANTIGUO CUSCATLAN</item>
+        <item>CIUDAD ARCE</item>
+        <item>COLON</item>
+        <item>COMASAGUA</item>
+        <item>CHILTIUPAN</item>
+        <item>HUIZUCAR</item>
+        <item>JAYAQUE</item>
+        <item>JICALAPA</item>
+        <item>LA LIBERTAD</item>
+        <item>NUEVO CUSCATLAN</item>
+        <item>SANTA TECLA</item>
+        <item>QUEZALTEPEQUE</item>
+        <item>SACACOYO</item>
+        <item>SAN JOSE VILLANUEVA</item>
+        <item>SAN JUAN OPICO</item>
+        <item>SAN MATIAS</item>
+        <item>SAN PABLO TACACHICO</item>
+        <item>TAMANIQUE</item>
+        <item>TALNIQUE</item>
+        <item>TEOTEPEQUE</item>
+        <item>TEPECOYO</item>
+        <item>ZARAGOZA</item>
+    </string-array>
+    <string-array name="san_salvador_array">
+        <item>AGUILARES</item>
+        <item>APOPA</item>
+        <item>AYUTUXTEPEQUE</item>
+        <item>CUSCATANCINGO</item>
+        <item>EL PAISNAL</item>
+        <item>GUAZAPA</item>
+        <item>ILOPANGO</item>
+        <item>MEJICANOS</item>
+        <item>NEJAPA</item>
+        <item>PANCHIMALCO</item>
+        <item>ROSARIO DE MORA</item>
+        <item>SAN MARCOS</item>
+        <item>SAN MARTIN</item>
+        <item>SAN SALVADOR</item>
+        <item>SANTIAGO TEXACUANGOS</item>
+        <item>SANTO TOMAS</item>
+        <item>SOYAPANGO</item>
+        <item>TONACATEPEQUE</item>
+        <item>CIUDAD DELGADO</item>
+    </string-array>
+    <string-array name="cuscatlan_array">
+        <item>CANDELARIA</item>
+        <item>COJUTEPEQUE</item>
+        <item>EL CARMEN</item>
+        <item>EL ROSARIO</item>
+        <item>MONTE SAN JUAN</item>
+        <item>ORATORIO DE CONCEPCION</item>
+        <item>SAN BARTOLOME PERULAPIA</item>
+        <item>SAN CRISTOBAL</item>
+        <item>SAN JOSE GUAYABAL</item>
+        <item>SAN PEDRO PERULAPAN</item>
+        <item>SAN RAFAEL CEDROS</item>
+        <item>SAN RAMON</item>
+        <item>SANTA CRUZ ANALQUITO</item>
+        <item>SANTA CRUZ MICHAPA</item>
+        <item>TENANCINGO</item>
+        <item>SUCHITOTO</item>
+    </string-array>
+    <string-array name="la_paz_array">
+        <item>CUYULTITAN</item>
+        <item>EL ROSARIO</item>
+        <item>JERUSALEN</item>
+        <item>MERCEDES LA CEIBA</item>
+        <item>OLOCUILTA</item>
+        <item>PARAISO DE OSORIO</item>
+        <item>SAN ANTONIO MASAHUAT</item>
+        <item>SAN EMIGDIO</item>
+        <item>SAN FRANCISCO CHINAMECA</item>
+        <item>SAN JUAN NONUALCO</item>
+        <item>SAN JUAN TALPA</item>
+        <item>SAN JUAN TEPEZONTES</item>
+        <item>SAN LUIS TALPA</item>
+        <item>SAN MIGUEL TEPEZONTES</item>
+        <item>SAN PEDRO MASAHUAT</item>
+        <item>SAN PEDRO NONUALCO</item>
+        <item>SAN RAFAEL OBRAJUELO</item>
+        <item>SANTA MARIA OSTUMA</item>
+        <item>SANTIAGO NONUALCO</item>
+        <item>TAPALHUACA</item>
+        <item>ZACATECOLUCA</item>
+        <item>SAN LUIS LA HERRADURA</item>
+    </string-array>
+    <string-array name="cabañas_array">
+        <item>CINQUERA</item>
+        <item>GUACOTECTI</item>
+        <item>ILOBASCO</item>
+        <item>JUTIAPA</item>
+        <item>SAN ISIDRO</item>
+        <item>SENSUNTEPEQUE</item>
+        <item>TEJUTEPEQUE</item>
+        <item>VICTORIA</item>
+        <item>DOLORES</item>
+    </string-array>
+    <string-array name="san_vicente_array">
+        <item>APASTEPEQUE</item>
+        <item>GUADALUPE</item>
+        <item>SAN CAYETANO ISTEPEQUE</item>
+        <item>SANTA CLARA</item>
+        <item>SANTO DOMINGO</item>
+        <item>SAN ESTEBAN CATARINA</item>
+        <item>SAN ILDEFONSO</item>
+        <item>SAN LORENZO</item>
+        <item>SAN SEBASTIAN</item>
+        <item>SAN VICENTE</item>
+        <item>TECOLUCA</item>
+        <item>TEPETITAN</item>
+        <item>VERAPAZ</item>
+    </string-array>
+    <string-array name="usulutan_array">
+        <item>ALEGRIA</item>
+        <item>BERLIN</item>
+        <item>CALIFORNIA</item>
+        <item>CONCEPCION BATRES</item>
+        <item>VILLA EL TRIUNFO</item>
+        <item>EREGUAYQUIN</item>
+        <item>ESTANZUELAS</item>
+        <item>JIQUILISCO</item>
+        <item>JUCUAPA</item>
+        <item>JUCUARAN</item>
+        <item>MERCEDES UMANA</item>
+        <item>NUEVA GRANADA</item>
+        <item>OZATLAN</item>
+        <item>PUERTO EL TRIUNFO</item>
+        <item>SAN AGUSTIN</item>
+        <item>SAN BUENAVENTURA</item>
+        <item>SAN DIONISIO</item>
+        <item>SANTA ELENA</item>
+        <item>SAN FRANCISCO JAVIER</item>
+        <item>SANTA MARIA</item>
+        <item>SANTIAGO DE MARIA</item>
+        <item>TECAPAN</item>
+        <item>USULUTAN</item>
+    </string-array>
+    <string-array name="san_miguel_array">
+        <item>CAROLINA</item>
+        <item>CIUDAD BARRIOS</item>
+        <item>COMACARAN</item>
+        <item>CHAPELTIQUE</item>
+        <item>CHINAMECA</item>
+        <item>CHIRILAGUA</item>
+        <item>EL TRANSITO</item>
+        <item>LOLOTIQUE</item>
+        <item>MONCAGUA</item>
+        <item>NUEVA GUADALUPE</item>
+        <item>NUEVO EDEN DE SAN JUAN</item>
+        <item>QUELEPA</item>
+        <item>SAN ANTONIO</item>
+        <item>SAN GERARDO</item>
+        <item>SAN JORGE</item>
+        <item>SAN LUIS DE LA REINA</item>
+        <item>SAN MIGUEL</item>
+        <item>SAN RAFAEL ORIENTE</item>
+        <item>SESORI</item>
+        <item>ULUAZAPA</item>
+    </string-array>
+    <string-array name="morazan_array">
+        <item>ARAMBALA</item>
+        <item>CACAOPERA</item>
+        <item>CORINTO</item>
+        <item>CHILANGA</item>
+        <item>DELICIAS DE CONCEPCION</item>
+        <item>EL DIVISADERO</item>
+        <item>EL ROSARIO</item>
+        <item>GUALOCOCTI</item>
+        <item>GUATAJIAGUA</item>
+        <item>JOATECA</item>
+        <item>JOCOAITIQUE</item>
+        <item>JOCORO</item>
+        <item>LOLOTIQUILLO</item>
+        <item>MEANGUERA</item>
+        <item>OSICALA</item>
+        <item>PERQUIN</item>
+        <item>SAN CARLOS</item>
+        <item>SAN FERNANDO</item>
+        <item>SAN FRANCISCO GOTERA</item>
+        <item>SAN ISIDRO</item>
+        <item>SAN SIMON</item>
+        <item>SENSEMBRA</item>
+        <item>SOCIEDAD</item>
+        <item>TOROLA</item>
+        <item>YAMABAL</item>
+        <item>YOLOAIQUIN</item>
+    </string-array>
+    <string-array name="la_union_array">
+        <item>ANAMOROS</item>
+        <item>BOLIVAR</item>
+        <item>CONCEPCION DE ORIENTE</item>
+        <item>CONCHAGUA</item>
+        <item>EL CARMEN</item>
+        <item>EL SAUCE</item>
+        <item>INTIPUCA</item>
+        <item>LA UNION</item>
+        <item>LISLIQUE</item>
+        <item>MEANGUERA DEL GOLFO</item>
+        <item>NUEVA ESPARTA</item>
+        <item>PASAQUINA</item>
+        <item>POLOROS</item>
+        <item>SAN ALEJO</item>
+        <item>SAN JOSE</item>
+        <item>SANTA ROSA DE LIMA</item>
+        <item>YAYANTIQUE</item>
+        <item>YUCUAIQUIN</item>
+    </string-array>
 </resources>
