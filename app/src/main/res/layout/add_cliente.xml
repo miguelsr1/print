@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/lblNit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/datosCliente"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/txtNit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:digits="0123456789-"
+            android:hint="N.I.T."
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/txtNrc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="N.C.R." />
+
+        <EditText
+            android:id="@+id/txtNombre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/nombre" />
+
+        <EditText
+            android:id="@+id/txtGiro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/giro" />
+
+        <EditText
+            android:id="@+id/txaDireccion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="@string/direccion"
+            android:inputType="textMultiLine" />
+
+        <TextView
+            android:id="@+id/lblMunicipio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/municipio" />
+
+        <Spinner
+            android:id="@+id/spMunicipio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:spinnerMode="dialog" />
+
+        <TextView
+            android:id="@+id/lblDepartamento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/departamento" />
+
+        <Spinner
+            android:id="@+id/spDepartamento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/spinnerDepartamento"
+            android:spinnerMode="dialog" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/guardar" />
+    </LinearLayout>
+</LinearLayout>

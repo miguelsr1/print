@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">print</string>
+    <string name="nit">NIT</string>
+    <string name="nrc">NRC</string>
+    <string name="nombre">Nombre</string>
+    <string name="giro">Giro</string>
+    <string name="direccion">Dirección</string>
+    <string name="departamento">Departamento</string>
+    <string name="municipio">Municipio</string>
+    <string name="guardar">Guardar</string>
+    <string name="addCliente">Agregar cliente</string>
+    <string name="FindNit">Nit del Cliente</string>
+    <string name="btnBuscar">Buscar</string>
+    <string name="lblConcepto">Descripción del Servicio</string>
+    <string name="lblMonto">Monto</string>
+    <string name="lblIva">I.V.A.</string>
+    <string name="lblMontoTotal">Total a Cobrar</string>
+    <string name="btnAddFactura">Crear Factura</string>
+    <string name="generarFactura">Generar Factura</string>
+    <string name="datosCliente">Datos Generales</string>
+</resources>
