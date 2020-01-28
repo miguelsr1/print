@@ -9,16 +9,16 @@
 
     <Button
         android:id="@+id/btnAddCliente"
-        android:theme="@style/ButtonColor"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/addCliente" />
+        android:layout_width="158dp"
+        android:layout_height="73dp"
+        android:text="@string/addCliente"
+        android:theme="@style/ButtonColor" />
 
     <Button
         android:id="@+id/btnCreateFactura"
-        android:theme="@style/ButtonColor"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/btnAddFactura" />
+        android:layout_width="158dp"
+        android:layout_height="73dp"
+        android:text="@string/btnAddFactura"
+        android:theme="@style/ButtonColor" />
 
 </LinearLayout>

@@ -5,10 +5,14 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.widget.Toast;
 
 import com.devsoft.print.db.tablas.Clientes;
+import com.devsoft.print.db.tablas.Version;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 /**
@@ -17,8 +21,9 @@ import java.util.List;
 
 public class BaseDeDatos extends SQLiteOpenHelper {
 
-    public static final int DATABASE_VERSION = 1;
+    public static final int DATABASE_VERSION = 2;
     public static final String DB_NAME = "clientes.db";
+    SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
     public BaseDeDatos(Context context) {
         super(context, DB_NAME, null, DATABASE_VERSION);
@@ -27,7 +32,9 @@ public class BaseDeDatos extends SQLiteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase db) {
         db.execSQL(Clientes.SQL_CREATE_ENTRIES);
-        //db.execSQL("insert into clientes (id_encuesta, fecha_creacion) values (1,'26/10/2020')");
+        db.execSQL(Version.SQL_CREATE_ENTRIES);
+
+        db.execSQL("insert into version (id_version, fecha_inicio) values (1,"+sdf.format(new Date())+")");
     }
 
     @Override
@@ -81,5 +88,21 @@ public class BaseDeDatos extends SQLiteOpenHelper {
             }
         }
         return lstRespuesta;
+    }
+
+
+    public Boolean getPruebaInicio() {
+        SQLiteDatabase db = this.getWritableDatabase();
+        String sql = "SELECT * FROM version WHERE id_version = 1 and mostrar_msj_inicio = 1";
+        Cursor cursor = db.rawQuery(sql, null);
+        int result = cursor.getCount();
+
+        if (result>1) {
+            sql = "UPDATE version SET mostrar_msj_inicio = 0 WHERE id_version = 1";
+            db.execSQL(sql);
+            return true;
+        }else{
+            return false;
+        }
     }
 }
