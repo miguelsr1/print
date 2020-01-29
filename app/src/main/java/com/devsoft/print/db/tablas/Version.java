@@ -5,15 +5,18 @@ public class Version {
     public static String TABLA_NAME = "version";
     public static String ID_NAME="id_version";
     public static String COL_MSJ_INICIO = "mostrar_msj_inicio";
+    public static String COL_CADUCO_PRUEBA = "caduco_prueba";
     public static String COL_FECHA_INICIO="fecha_inicio";
 
     public static final String SQL_CREATE_ENTRIES =
             "CREATE TABLE " + TABLA_NAME + " (" +
                     "   " + ID_NAME + " INTEGER PRIMARY KEY," +
                     "   " + COL_MSJ_INICIO + " INTEGER, "+
+                    "   " + COL_CADUCO_PRUEBA + " INTEGER, "+
                     "   " + COL_FECHA_INICIO + " TEXT)";
 
     public Integer idVersion;
+    public Integer caducoPrueba;
     public String fechaInicio;
     public Integer mostrarMsjInicio;
 
@@ -43,5 +46,13 @@ public class Version {
 
     public void setFechaInicio(String fechaInicio) {
         this.fechaInicio = fechaInicio;
+    }
+
+    public Integer getCaducoPrueba() {
+        return caducoPrueba;
+    }
+
+    public void setCaducoPrueba(Integer caducoPrueba) {
+        this.caducoPrueba = caducoPrueba;
     }
 }

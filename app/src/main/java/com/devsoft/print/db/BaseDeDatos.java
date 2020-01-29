@@ -5,6 +5,7 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
 import android.widget.Toast;
 
 import com.devsoft.print.db.tablas.Clientes;
@@ -21,9 +22,8 @@ import java.util.List;
 
 public class BaseDeDatos extends SQLiteOpenHelper {
 
-    public static final int DATABASE_VERSION = 2;
-    public static final String DB_NAME = "clientes.db";
-    SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+    public static final int DATABASE_VERSION = 4;
+    public static final String DB_NAME = "cliente.db";
 
     public BaseDeDatos(Context context) {
         super(context, DB_NAME, null, DATABASE_VERSION);
@@ -31,15 +31,19 @@ public class BaseDeDatos extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
+        SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
+
         db.execSQL(Clientes.SQL_CREATE_ENTRIES);
         db.execSQL(Version.SQL_CREATE_ENTRIES);
 
-        db.execSQL("insert into version (id_version, fecha_inicio) values (1,"+sdf.format(new Date())+")");
+        Log.e("inicial ","insert into version (id_version, fecha_inicio, mostrar_msj_inicio, caduco_prueba) values (1,'"+sdf.format(new Date())+"', 1,0)");
+        db.execSQL("insert into version (id_version, fecha_inicio, mostrar_msj_inicio, caduco_prueba) values (1,'"+sdf.format(new Date())+"', 1, 0)");
     }
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
         db.execSQL("DROP TABLE IF EXISTS " + Clientes.TABLA_NAME);
+        db.execSQL("DROP TABLE IF EXISTS " + Version.TABLA_NAME);
         onCreate(db);
     }
 
@@ -87,22 +91,53 @@ public class BaseDeDatos extends SQLiteOpenHelper {
                 cursor.moveToNext();
             }
         }
+        cursor.close();
         return lstRespuesta;
     }
 
 
-    public Boolean getPruebaInicio() {
+    public void getPruebaInicio() {
         SQLiteDatabase db = this.getWritableDatabase();
         String sql = "SELECT * FROM version WHERE id_version = 1 and mostrar_msj_inicio = 1";
         Cursor cursor = db.rawQuery(sql, null);
         int result = cursor.getCount();
-
-        if (result>1) {
+        Log.e("Version? ", String.valueOf(result));
+        if (result == 1) {
             sql = "UPDATE version SET mostrar_msj_inicio = 0 WHERE id_version = 1";
             db.execSQL(sql);
-            return true;
-        }else{
-            return false;
         }
+        cursor.close();
+    }
+
+    public String getFechaInicio(){
+        SQLiteDatabase db = this.getWritableDatabase();
+        String sql = "SELECT fecha_inicio FROM version";
+        Cursor cursor = db.rawQuery(sql, null);
+        String fecha="";
+        if(cursor.moveToFirst())
+        {
+            fecha = cursor.getString(0);
+        }
+        cursor.close();
+        return fecha;
+    }
+
+    public boolean getCaducoPrueba(){
+        SQLiteDatabase db = this.getWritableDatabase();
+        String sql = "SELECT caduco_prueba FROM version";
+        Cursor cursor = db.rawQuery(sql, null);
+        int caduco = 0;
+        if(cursor.moveToFirst())
+        {
+            caduco = cursor.getInt(0);
+        }
+        cursor.close();
+        return caduco == 1;
+    }
+
+    public void setCaducoPrueba(){
+        SQLiteDatabase db = this.getWritableDatabase();
+        String sql = "UPDATE version SET caduco_prueba = 1 WHERE id_version = 1";
+        db.execSQL(sql);
     }
 }
